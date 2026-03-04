@@ -1,12 +1,9 @@
-import StripeScale from '../../imports/StripeScale';
-import { AlignedPricingCards } from '../components/AlignedPricingCards';
+import HomeContent from './HomePage';
 
 export default function DashHome() {
   return (
     <div data-name="NewUserHomePage" style={{ height: '100%' }}>
-      <AlignedPricingCards>
-        <StripeScale />
-      </AlignedPricingCards>
+      <HomeContent />
     </div>
   );
 }

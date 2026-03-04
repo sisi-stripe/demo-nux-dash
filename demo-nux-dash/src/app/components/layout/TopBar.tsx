@@ -81,10 +81,12 @@ function RightSide() {
 
 export default function TopBar() {
   return (
-    <div className="backdrop-blur-[25px] bg-white content-stretch flex gap-[10px] h-[60px] items-center justify-center px-[24px] py-[8px] shrink-0 sticky top-0 w-full rounded-tr-[12px]" data-name="Topbar">
+    <div className="backdrop-blur-[25px] bg-white h-[60px] shrink-0 sticky top-0 w-full rounded-tr-[12px]" data-name="Topbar">
       <div aria-hidden="true" className="absolute border border-solid border-white inset-0 pointer-events-none" />
-      <Search />
-      <RightSide />
+      <div className="max-w-[1280px] mx-auto flex gap-[10px] items-center h-full px-[24px]">
+        <Search />
+        <RightSide />
+      </div>
     </div>
   );
 }

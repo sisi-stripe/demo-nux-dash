@@ -66,13 +66,8 @@ export default function HomePage() {
   return (
     <div>
       <HeroHeader
-        greeting="Good morning, Sisi"
-        headingPrimary="Welcome to Stripe."
+        greeting="Welcome to Stripe."
         headingSecondary="Complete your account setup to activate your first payment method."
-        buttonText="Set up payments"
-        insightLabel="Daily insight"
-        insightValue="$3.34M"
-        onButtonClick={handleSetupPayments}
       />
       {/* Rest of your content */}
     </div>

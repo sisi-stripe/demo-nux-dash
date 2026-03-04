@@ -11,6 +11,17 @@
   line-height: 120%; /* 43.2px */
 }
 
+/* H1 Secondary - 28px heading */
+.text-h1-secondary {
+  color: var(--text-default, #1F2937);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 32.2px */
+}
+
 /* H2 - Secondary heading */
 .text-h2 {
   color: var(--text-default, #1F2937);
@@ -88,6 +99,28 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 19.6px */
+}
+
+/* Label/Small */
+.text-label-small {
+  color: var(--text-default, #1F2937);
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+/* Label/Large emphasized */
+.text-label-large-emphasized {
+  color: var(--text-default, #1F2937);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.31px;
 }
 
 /* Label/Medium emphasized */
