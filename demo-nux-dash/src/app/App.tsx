@@ -2,12 +2,13 @@ import { useState } from 'react';
 import DashboardLayout from './components/layout/DashboardLayout';
 import DashHome from './pages/DashHome';
 import SettingsPage from './pages/SettingsPage';
+import BalancesPage from './pages/BalancesPage';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'settings'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'settings' | 'balances'>('home');
 
   const handleNavigate = (page: string) => {
-    if (page === 'home' || page === 'settings') {
+    if (page === 'home' || page === 'settings' || page === 'balances') {
       setCurrentPage(page);
     }
   };
@@ -19,6 +20,7 @@ export default function App() {
         <DashboardLayout onNavigate={handleNavigate} currentPage={currentPage}>
           {currentPage === 'home' && <DashHome />}
           {currentPage === 'settings' && <SettingsPage />}
+          {currentPage === 'balances' && <BalancesPage />}
         </DashboardLayout>
       </div>
     </div>

@@ -1,5 +1,41 @@
 /* Typography System - Heading Styles */
 
+/* Heading/Small */
+.text-heading-small {
+  color: var(--text-default, #1F2937);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.31px;
+}
+
+/* Heading/XLarge Regular */
+.text-heading-xlarge-regular {
+  color: var(--text-default, #1F2937);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: 0.38px;
+}
+
+/* Heading/XLarge */
+.text-heading-xlarge {
+  color: var(--text-default, #1F2937);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: 0.38px;
+}
+
 /* H1 - Main heading */
 .text-h1 {
   color: var(--text-default, #1F2937);

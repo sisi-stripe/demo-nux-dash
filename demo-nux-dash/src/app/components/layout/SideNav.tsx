@@ -24,11 +24,14 @@ function Frame3({ onNavigate, currentPage }: Frame3Props) {
         <Icon name="home" size="small" />
       </button>
       <button
+        onClick={() => onNavigate?.('balances')}
         className="relative shrink-0 cursor-pointer hover:opacity-70 transition-opacity flex items-center justify-center"
         style={{
           width: '24px',
           height: '24px',
-          color: 'var(--icon-subdued, #6C7688)',
+          borderRadius: '4px',
+          background: currentPage === 'balances' ? 'var(--brand-50, #EFECFC)' : 'transparent',
+          color: currentPage === 'balances' ? 'var(--icon-primary, rgba(103, 93, 255, 1))' : 'var(--icon-subdued, #6C7688)',
         }}
       >
         <Icon name="balance" size="small" />
